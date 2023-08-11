@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to literati-quiz 👋</h1>
+<h1 align="center">Welcome to the literati-quiz 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -31,7 +31,11 @@ npm run test
 
 Project stack:
 
-
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,aws,nodejs,express,git,html,css,postman,mysql,sass,bootstrap,jest,linux,vscode&perline=17" />
+  </a>
+</p>
 
 
 
@@ -44,7 +48,5 @@ Project stack:
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+ Give a ⭐️ if you enjoyed this project or it helped you in some way! 
+Thanks for being here 
