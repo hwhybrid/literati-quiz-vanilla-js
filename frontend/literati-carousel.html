@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Literati Types</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
+        <!-- <link rel="stylesheet" href="literati-carousel.css" /> -->
+        <link rel="stylesheet" href="/quiz.css" />
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <img
+                        src="/public/literati_profile_images/logos/word_mark_and_element_logo.png"
+                        id="navbar-logo"
+                        alt="Literati Logo"
+                    />
+                    <br />
+                    <br />
+                    <a
+                        class="navbar-brand"
+                        href="http://localhost:8080/index.html"
+                        >Literati Persona Project</a
+                    >
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="http://localhost:8080/index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="http://localhost:8080/about.html"
+                                    >About</a
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="http://localhost:8080/index.html"
+                                    >Quiz</a
+                                >
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="http://localhost:8080/literati-carousel.html"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    Literati Profiles
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="http://localhost:8080/literati-carousel.html"
+                                            >Literati Carousel</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="http://localhost:8080/cool-connoisseur.html"
+                                            >Cool Connoisseur</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="http://localhost:8080/evolving-egghead.html"
+                                            >Evolving Egghead</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="http://localhost:8080/budding-bookworm.html"
+                                            >Budding Bookworm</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="http://localhost:8080/perpetual-peruser.html"
+                                            >Perpetual Peruser</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="http://localhost:8080/looney-literati.html"
+                                            >Looney Literati</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="http://localhost:8080/literati-carousel.html"
+                                    >Carousel</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Newsletter</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Contact</a
+                                >
+                            </li>
+
+                            <!-- <li class="nav-item">
+                                <a
+                                    class="nav-link disabled"
+                                    aria-disabled="true"
+                                    >Archive</a
+                                >
+                            </li> -->
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input
+                                class="form-control me-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                            />
+                            <button
+                                class="btn btn-outline-success"
+                                type="submit"
+                            >
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="logo-tagline-combo">
+            <img
+                src="/public/literati_profile_images/logos/word_mark_and_element_logo_white.png"
+                id="literati-logo"
+            />
+            <h5 id="tag-line">...reading life to the fullest...</h5>
+        </div>
+        <div class="container mt-5">
+            <div
+                id="carouselExampleFade"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel"
+            >
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleFade"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleFade"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleFade"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleFade"
+                        data-bs-slide-to="3"
+                        aria-label="Slide 4"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleFade"
+                        data-bs-slide-to="4"
+                        aria-label="Slide 5"
+                    ></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleFade"
+                        data-bs-slide-to="5"
+                        aria-label="Slide 6"
+                    ></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            src="/public/carousel-images/carousel-cta-literati.png"
+                            class="d-block w-100"
+                            alt="Call to action image"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>What sort of literati are you?</h5>
+                            <p>Take the quiz!</p> -->
+                        </div>
+                    </div>
+                    <!-- Add slides for each Literati Type here -->
+                    <!-- Using the provided reference data -->
+                    <div class="carousel-item">
+                        <img
+                            src="/public/carousel-images/carousel-cool-connoisseur.png"
+                            class="d-block w-100"
+                            alt="Cool Connoisseur"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Cool Connoisseur</h5>
+                            <p>Description for Cool Connoisseur here</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="/public/carousel-images/carousel-evolving-egghead.png"
+                            class="d-block w-100"
+                            alt="Evolving Egghead"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Evolving Egghead</h5>
+                            <p>Description for Evolving Egghead here</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="/public/carousel-images/carousel-budding-bookworm.png"
+                            class="d-block w-100"
+                            alt="Budding Bookworm"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Budding Bookworm</h5>
+                            <p>Description for Budding Bookworm here</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="/public/carousel-images/carousel-perpetual-peruser.png"
+                            class="d-block w-100"
+                            alt="Perpetual Peruser"
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                            <!-- <h5>Perpetual Peruser</h5>
+                            <p>Description for Perpetual Peruser here</p> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="/public/carousel-images/carousel-looney-literati.png"
+                            class="d-block w-100"
+                            alt="Looney Literati"
+                        />
+                        <!-- <div class="carousel-caption d-none d-md-block">
+                            <h5>Looney Literati</h5>
+                            <p>Description for Looney Literati here</p>
+                        </div> -->
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Take the Quiz button -->
+            <div class="mt-4 text-center">
+                <a
+                    href="http://localhost:8080/index.html"
+                    class="btn btn-primary btn-lg"
+                    id="carousel-quiz-btn"
+                    >Take the Quiz!</a
+                >
+            </div>
+        </div>
+        <footer class="elegant-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-headings">Links</h4>
+                    <ul>
+                        <li>
+                            <a href="http://localhost:8080/index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8080/index.html">Quiz</a>
+                        </li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-headings">About</h4>
+                    <p id="about-footer-text">
+                        The Literati Project is dedicated to helping readers
+                        find their literary personas and engage more deeply with
+                        their reading journeys.
+                    </p>
+                    <div id="footer-logo-tagline-combo">
+                        <img
+                            src="/public/literati_profile_images/logos/word_mark_and_element_logo_white.png"
+                            id="footer-literati-logo"
+                            alt="Literati Logo"
+                        />
+                        <h4 id="footer-tag-line">
+                            ...reading life to the fullest...
+                        </h4>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-headings">Contact Us</h4>
+                    <p>Email: support@literatiquiz.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-headings">
+                        What sort of Literati are you?
+                    </h4>
+                    <ul class="footer-literati-list">
+                        <li class="cc">Cool Connoisseur?</li>
+                        <li class="ee">Evolving Egghead?</li>
+                        <li class="bb">Budding Bookworm?</li>
+                        <li class="pp">Perpetual Peruser?</li>
+                        <li class="ll">Looney Literati?</li>
+                    </ul>
+                    <p href="http://localhost:8080/index.html">
+                        Take the QUIZ!
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <!-- <p>&copy; 2023 Literati Project. All rights reserved.</p> -->
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="bundle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

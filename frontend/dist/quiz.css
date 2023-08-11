@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Comfortaa'!important;
+    margin: 0;
+    /* padding: 0; */
+
+	/* background-color: #042039 !important;  */
+	background-color: #231E40 !important; 
+
+	/* background-color: rgb(32, 33, 36); */
+	color: #F5F5E9 !important;
+	
+}
+
+.navigation-bar {
+    /* color: #F5F5E9; */
+    padding: 10px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/* Custom class for navigation links */
+.nav-links {
+    display: flex;
+    align-items:flex-end;
+	justify-content: space-evenly;
+	list-style-type: none;
+	color: #F5F5E9;
+	text-decoration: none;
+
+}
+
+
+.nav-item {
+    margin-right: 15px;
+}
+
+#navbar-logo{
+	width: 3.5%;
+	padding-right: 20px;
+	
+}
+
+
+#literati-logo {
+	width: 10%;
+	margin: auto;
+	display: block;
+	padding-top: 25px;
+}
+#tag-line {
+	color: #F5F5E9 !important;
+	text-align: center;
+	font-size: 1.2rem;
+
+}
+#logo-tagline-combo {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.literati-banner{
+	width: 100%;
+	max-height: 50vh; /* Relative to viewport height */
+	min-height: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+/* Using media query to adjust styles for smaller screens */
+@media (max-width: 768px) {
+    .literati-banner {
+        height: auto; /* lets the height be determined by its content */
+        padding: 3vh 0; /* top and bottom padding */
+    }
+}
+
+/* If there's a background image */
+.literati-banner {
+    background-size: cover;
+    background-position: center;
+}
+
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+	margin-top: 30px;
+	/* border-radius: 10px; */
+}
+
+.question-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+	background-color: #4e4c62;
+	box-shadow: 0 4px 8px;
+
+}
+
+
+/* Ensures the image fits within the container */
+.question-image-container {
+    width: 100%;
+    max-width: 600px; 
+    margin: 20px auto; /* Centers the container and give some space above and below */
+    overflow: hidden; /* Ensures any oversized image parts are hidden */
+    position: relative;
+}
+
+.question-image {
+    width: 100%;
+    max-height: 300px; 
+    object-fit: cover; /* Covers the space of the container without stretching */
+}
+
+/* Styling the credit text */
+.question-image-container p {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 10px; /* Making it smaller */
+	color: #F5F5E9;    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 2px 5px;
+    border-radius: 2px;
+}
+
+
+.question-text {
+    margin: 0;
+	color: #F5F5E9;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.options-list li {
+    margin-bottom: 10px;
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	color: #F5F5E9;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content:center;
+
+}
+
+.previous-button,
+.next-button, .submit-button {
+    padding: 10px 20px;
+    /* background-color: #B2B2B2; */
+	background-color: #312f3f;;
+    color: lightgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	margin-top: 10px;
+
+}
+
+.next-button {
+    background-color: #4e4c62;
+	color: lightblue;
+	margin-left: 30px;
+	box-shadow: 0 4px 9px;
+
+	
+}
+.submit-button {
+	background-color: lightblue;
+	color: #4e4c62;
+	margin-left: 30px;
+	box-shadow: 0 4px 9px;
+
+}
+
+.cta-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	color: #F5F5E9;
+}
+
+.carousel-fade .carousel-item {
+    transition: opacity 1.5s ease-in-out; /* Adjust the time (1.5s) as needed */
+}
+
+#carousel-quiz-btn {
+    padding: 10px 20px;
+    background-color: #4e4c62;
+    color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 9px;
+	margin-bottom: 80px;
+}
+
+/* Individual Literati Page Styles */
+
+.literari-solo-page {
+    padding: 40px 20px;
+}
+
+.literari-solo-page img.centered-image {
+    display: block;
+    max-width: 40%; 
+    height: auto;   /* Important for keeping the aspect ratio */
+    margin: 20px auto; /* Top and bottom margin and centers the image */
+	box-shadow: 0 4px 9px;
+
+}
+
+.literari-solo-page p {
+    font-size: 1.1rem;   
+    line-height: 1.6rem; 
+    margin: 20px auto; 
+	margin-top: 40px; 
+	display: block;
+    text-align: justify; 
+	max-width: 700px;
+}
+
+
+.literari-solo-page .img-fluid {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.literari-solo-page .img-fluid:hover {
+    transform: scale(1.03);
+}
+
+
+/* Typography styling for the literati name */
+.literari-solo-page  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: lightblue;
+    margin-bottom: 20px;
+}
+
+
+
+
+.li-footer {
+	/* text-decoration: none; */
+	list-style-type: none;
+	color: #F5F5E9;
+
+}
+
+
+
+
+.result-container {
+	/* background-color: rgb(40, 41, 77); */
+
+    background-color: #4e4c62; 
+    padding: 30px; 
+    border-radius: 10px; /* Rounded corners */
+    color: #F5F5E9; 
+    text-align: center; 
+    margin: 50px 0; /* Some margin on the top and bottom */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Undecided: A subtle shadow for depth */
+	/* margin-bottom: 20px; */
+
+	box-shadow: 0 4px 8px;
+}
+
+.result-container h1 {
+    font-size: 2rem; /* Larger font size for the result heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.result-container p {
+    font-size: 1.2rem; /* Slightly larger font size for the description */
+    margin-bottom: 20px; /* Space below each paragraph */
+}
+
+.result-container img {
+    max-width: 100%; /* Ensures any images in the result are responsive */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+
+.elegant-footer {
+    background-color: #312f3f;
+    color: #F5F5E9;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    border-bottom: 2px solid #4e4c62;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+	margin-top: 20px;;
+}
+.footer-headings {
+	font-size: 1.0rem;
+	text-align: center;
+}
+
+.footer-section p, .footer-section li, .footer-section a {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    line-height: 1.4rem;
+    color: #F5F5E9;
+	list-style-type: none;
+	text-align: justify;
+
+}
+
+.footer-section a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: lightblue;
+}
+
+#about-footer-text {
+	text-align: justify;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+/*  */
+#footer-logo-tagline-combo {
+    margin-top: 10px;
+
+}
+
+#footer-literati-logo {
+    width: 35%; 
+    display: block;
+    margin: 10px auto;
+}
+
+#footer-tag-line {
+    color: #F5F5E9;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 10px;
+	color: #F5F5E9;
+
+}
+
+.footer-literati-list {
+	font-size: 0.7rem;
+	text-align: center;
+	list-style-type: none;
+	color: #F5F5E9;
+
+
+}
+
+.progress {
+    height: 15px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #E0E0E0;  /* Light gray background for the unfilled portion */
+    border-radius: 10px;        
+    overflow: hidden;           /* Ensures inner bar doesn't protrude */
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #4A90E2 !important;  /* Muted blue for the filled portion */
+
+    transition: width 0.5s;    /* Smooths transition for width changes */
+    display: flex;             
+    align-items: center;        
+    justify-content: center;    
+    color: white;               
+    font-weight: bold;         
+}
+
+.cta-text {
+display: block;
+	color: #F5F5E9;
+	text-align: center;
+	line-height: 1.4rem;
+}
+
+.spacer {
+    height: 10px;
+}
